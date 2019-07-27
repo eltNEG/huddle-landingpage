@@ -1,0 +1,411 @@
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+  --pink-color: hsl(322, 100%, 66%);
+  --violet-color: hsl(265, 100%, 66%);
+  --lg-blue: hsl(214, 64%, 98%);
+  --mg-blue: hsl(208, 11%, 55%);
+  --vd-cyan: hsl(192, 100%, 9%);
+  --font-size: 18px;
+  --poppins: 'Poppins';
+  --open-sans: 'Open Sans';
+  --weight-400: 400;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+
+body {
+  margin: 0px;
+  padding: 0.1px;
+  font-family: var(--open-sans);
+  background-color: var(--lg-blue);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  max-width: 100vw;
+  font-size: var(--font-size);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.bg-pink-div {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  background-color: var(--pink-color);
+  background: hsl(322, 100%, 66%);
+  background: -webkit-linear-gradient(
+    to right,
+    hsl(322, 100%, 66%),
+    hsl(265, 100%, 66%)
+  );
+  background: linear-gradient(
+    to right,
+    hsl(322, 100%, 66%),
+    hsl(265, 100%, 66%)
+  );
+  right: -19em;
+  top: -8em;
+  z-index: -2;
+  border-radius: 4rem;
+  transform: rotateY(0deg) rotate(55deg);
+}
+.bg-white-div {
+  position: absolute;
+  height: 25rem;
+  width: 25rem;
+  background-color: white;
+  right: -1rem;
+  top: 13rem;
+  z-index: -3;
+  border-radius: 2rem;
+  transform: rotateY(0deg) rotate(45deg);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+}
+
+.header {
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 1.3rem;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 6px 6px -6px var(--vd-cyan);
+  -moz-box-shadow: 5px 6px 6px -6px var(--vd-cyan);
+  box-shadow: 5px 6px 6px -6px var(--vd-cyan);
+}
+
+.btn-pri {
+  height: 1.7rem;
+  width: 25%;
+  background-color: white;
+  color: var(--violet-color);
+  border-radius: 3px;
+}
+
+.btn {
+  outline: none;
+  border: 0;
+}
+.btn:active {
+  outline: none;
+}
+
+.main {
+  padding: 0 1.7rem;
+}
+
+.section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.user-section {
+  margin-top: 12.5rem;
+}
+
+.flowing-conv {
+  margin-top: 8rem;
+}
+
+.try-it {
+  margin-top: 5.2rem;
+}
+
+/* .try-it-section{
+  margin
+} */
+
+.title {
+  font-family: var(--poppins);
+  text-align: center;
+  font-weight: bolder;
+}
+
+.big-title {
+  font-size: 1.5rem;
+}
+
+.small-title {
+  font-size: 1.1rem;
+  color: var(--vd-cyan);
+}
+
+.try-title {
+  font-size: 1rem;
+}
+
+.btn.try-btn {
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--mg-blue);
+}
+
+.smaller-text {
+  font-size: 0.6rem;
+}
+
+.btn-action {
+  background-color: var(--pink-color);
+  color: var(--lg-blue);
+  height: 2.5rem;
+  width: 70%;
+  border-radius: 3px;
+}
+
+.card {
+  background-color: white;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--vd-cyan);
+  color: var(--lg-blue);
+  text-align: center;
+}
+
+.footer-section {
+  margin-top: 6rem;
+  padding: 5rem 1.3rem 2rem 2rem;
+}
+
+.footer-logo {
+  height: auto;
+  width: auto;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+.text.ft-links {
+  text-align: left;
+  margin-left: 0;
+  padding: 0;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: var(--lg-blue);
+  opacity: 0.85;
+  margin-top: 3rem;
+}
+
+.sub-text,
+.op-col {
+  color: var(--lg-blue);
+  opacity: 0.85;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+.sub-btn,
+.sub-input {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sub-input {
+  height: 2.5rem;
+}
+
+.socials {
+  margin: 5rem 0 2rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.socials a,
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 769px) {
+  .btn.btn-pri {
+    max-width: 8rem;
+    height: 2rem;
+  }
+  .bg-pink-div {
+    height: 41rem;
+    width: 68rem;
+    right: -26em;
+    top: -3em;
+  }
+
+  .bg-white-div {
+    height: 77rem;
+    width: 31rem;
+    right: 16rem;
+    top: -16rem;
+    border-radius: 2rem;
+    transform: rotateY(0deg) rotate(50deg);
+
+  }
+
+  .ill-img {
+    width: 50%;
+    min-width: 700px;
+  }
+  .header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .logo {
+    width: 160px;
+    height: 2rem;
+  }
+
+  .section,
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .text-lg {
+    max-width: 425px;
+  }
+
+  .get-started {
+    max-width: 200px;
+  }
+
+  .users-img,
+  .users-txt {
+    width: 50%;
+    height: 50%;
+  }
+
+  .users-txt {
+    padding: 2rem 4rem;
+  }
+
+  .users-txt .text,
+  .users-txt .title {
+    text-align: left;
+  }
+
+  .user-section {
+    align-items: center;
+  }
+  .flowing-conv {
+    margin-top: 0;
+  }
+
+  .try-it .card {
+    min-width: 450px;
+    min-height: 230px;
+    padding: 2rem;
+  }
+  .smaller-text {
+    font-size: 0.8rem;
+  }
+
+  .btn.try-btn {
+    width: 50%;
+    margin-top: 1.5rem;
+  }
+
+  .footer-logo {
+    width: 253px;
+    height: 3rem;
+  }
+  .ft-logo-container {
+    width: 100%;
+    text-align: left;
+  }
+
+  .subscribe-section,
+  .text.ft-links,
+  .socials-section {
+    width: 33%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .socials-section {
+    order: 2;
+  }
+
+  .socials-section .socials {
+    margin-top: 0;
+  }
+
+  .copyright,
+  .attribution {
+    text-align: left;
+  }
+
+  .ft-links {
+    columns: 2;
+    order: 3;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .subscribe-section {
+    order: 4;
+  }
+
+  .subscribe-section .text {
+    text-align: left;
+  }
+
+  .subscribe-section h4 {
+    margin-top: 0;
+  }
+
+  .subscribe-section .sub-btn {
+    width: 50%;
+    float: right;
+  }
+}
