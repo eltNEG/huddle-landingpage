@@ -268,20 +268,20 @@ body {
     height: 2rem;
   }
   .bg-pink-div {
-    height: 41rem;
-    width: 68rem;
-    right: -26em;
-    top: -3em;
+    height: 42rem;
+    width: 74rem;
+    right: -19em;
+    top: -10em;
+    transform: rotateY(0deg) rotate(41deg);
   }
 
   .bg-white-div {
     height: 77rem;
-    width: 31rem;
-    right: 16rem;
-    top: -16rem;
+    width: 38rem;
+    right: 31rem;
+    top: -11rem;
     border-radius: 2rem;
-    transform: rotateY(0deg) rotate(50deg);
-
+    transform: rotateY(0deg) rotate(65deg);
   }
 
   .ill-img {
